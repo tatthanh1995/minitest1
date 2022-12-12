@@ -1,21 +1,34 @@
-let a = parseInt(document.getElementById("num1").value);
-let b = parseInt(document.getElementById("num2").value);
-let c = a + b;
-let d = a - b;
-let e = a * b;
-let f = a / b;
+
+/*let c = number(a)+number (b);
+let d = number(a)-number (b);
+let e = number(a)*number (b);
+let f = number(a)/number (b);*/
+
+
 
 function tong() {
-    document.getElementById("ketqua").innerHTML = c
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    let c = Number(a)+Number(b)
+    document.getElementById("kq").innerHTML = c
 }
 function hieu() {
-    document.getElementById("ketqua").innerHTML = d
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    let d = Number(a)- Number(b)
+    document.getElementById("kq").innerHTML = d
 }
 function tich() {
-    document.getElementById("ketqua").innerHTML = e
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    let e = Number(a) * Number(b)
+    document.getElementById("kq").innerHTML = e
 }
 function thuong() {
-    document.getElementById("ketqua").innerHTML = f
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    let f = Number(a)/Number(b)
+    document.getElementById("kq").innerHTML = f
 
 }
 
